@@ -40,12 +40,18 @@ app.get('/', (req, res) => {
   res.render('root.hbs', {
     pageTitle: 'Home Page',
     textWelcome: 'Benvenuto qui nel HBS di Express'
-  })
+  });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
   })
 });
 
